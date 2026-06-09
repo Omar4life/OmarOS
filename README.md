@@ -1,6 +1,6 @@
 # OmarOS
 
-A web-based operating system simulator built to showcase projects, tech blogs, and professional profiles in a clean retro interface.
+This is my very own WebOS, which is called OmarOS (I mean obviously, what else would I call it), OmarOS is a WebOS which is basically everything about me
 
 ## 🚀 Features
 
@@ -11,14 +11,6 @@ A web-based operating system simulator built to showcase projects, tech blogs, a
 
 ## 🛠️ Built With
 
-* **HTML5** – Content structure.
-* **CSS3** – Visual styling.
-* **JavaScript** – Dynamic time logic.
-
-## 💻 How to Run It Locally
-
-```bash
-git clone https://github.com
-cd omaros
-open index.html
-```
+* **HTML** – Base of the app.
+* **CSS** – Some cool drip for the app.
+* **JavaScript** – Everyone needs to know the time, right?
