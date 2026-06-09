@@ -1,0 +1,20 @@
+html {
+    border: 4mm ridge rgba(0, 255, 221, 0.893);
+    width: 475px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+a img {
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+
+div {
+    margin-bottom: 5px;
+}
