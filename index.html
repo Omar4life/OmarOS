@@ -5,43 +5,47 @@
     <title>My WebOS</title>
      <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Helvetica, Noto Sans, sans-serif">
+<body>
     
-    <h1>Welcome to OmarOS</h1>
-    <h2>Introduction</h2>
-    <p>i'm omar, a 13 year old. i mostly share and write about AI/tech.</p>
-    <p>i've been coding roughly since 2019-2020</p>
-    <p>i know html/css and javascript</p>
-    <p>currently, i'm learning python</p>
-    
-    <div>
-        <a href="https://www.linkedin.com/in/omar-el-idrissi-90bb29258/" target="_blank" rel="noopener">
-         <img src="linke.png" alt="LinkedIn Logo" />
-         Linkedin
-        </a>
+    <button id="welcomeopen">OmarOS</button>
+
+    <div id="window">
+        
+        <div id="windowheader">
+            <div id="welcomeclose" class="closebutton"></div>
+        </div>
+
+        <div class="window-content">
+            <img src="pfp.jpg" alt="My Profile Picture" class="pfp">
+
+            <h1>Welcome to OmarOS</h1>
+            <h2>Introduction</h2>
+            <p>i'm omar, a 13 year old. i mostly share and write about AI/tech.</p>
+            <p>i've been coding roughly since 2019-2020</p>
+            <p>i know html/css and javascript</p>
+            <p>currently, i'm learning python</p>
+            
+            <div>
+                <a href="https://linkedin.com" target="_blank" rel="noopener">
+                 <img src="linke.png" alt="LinkedIn Logo" />
+                 Linkedin
+                </a>
+            </div>
+
+            <div>
+                <a href="https://github.com" target="_blank" rel="noopener">
+                 <img src="download.png" alt="GitHub Logo" />   
+                 GitHub
+                </a>
+            </div>
+
+            <p id="timeElement" style="font-weight: bold;">
+              Time
+            </p>
+        </div>
     </div>
 
-    <div>
-        <a href="https://github.com/Omar4life/" target="_blank" rel="noopener">
-         <img src="download.png" alt="GitHub Logo" />
-         GitHub
-        </a>
-    </div>
-
-
-    <p id="timeElement"
-      style="font-weight: bold;">
-      Time
-    </p>
-
-    <script>
-    function updateTime() {
-        var currentTime = new Date().toLocaleString();
-        var timeText = document.querySelector("#timeElement");
-        timeText.innerHTML = currentTime
-        }
-    setInterval(updateTime, 1000);
-    </script>
+    <script src="script.js"></script>
     
 </body>
 </html>

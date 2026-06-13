@@ -1,10 +1,75 @@
-html {
-    border: 4mm ridge rgba(0, 255, 221, 0.893);
-    width: 475px;
-    padding: 20px;
-    box-sizing: border-box;
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Noto Sans, sans-serif;
+    background-image: url(./Morocco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
 
+
+#welcomeopen {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 14px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 255, 221, 0.893);
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+#window {
+    border: 4mm ridge rgba(0, 255, 221, 0.893);
+    width: 475px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 0;
+}
+
+#windowheader {
+    height: 30px;
+    background-color: rgba(0, 255, 221, 0.2);
+    border-bottom: 2px solid rgba(0, 255, 221, 0.893);
+    cursor: grab;
+    user-select: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#windowheader:active {
+    cursor: grabbing;
+}
+
+
+.closebutton {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background-color: #EC6B5E;
+    border-radius: 50%;
+    border: solid 1px rgba(0, 0, 0, 0.25);
+    margin-left: 8px;
+}
+
+.window-content {
+    padding: 20px;
+}
+
+
+.window-content h1 {
+    margin-top: 0;
+}
 
 a img {
     height: 20px;
@@ -12,9 +77,15 @@ a img {
     margin-right: 5px;
 }
 
-
-
-
 div {
     margin-bottom: 5px;
+}
+
+.pfp {
+    width: 80px;     
+    height: 80px;           
+    border-radius: 50%;    
+    object-fit: cover;      
+    border: 4px solid rgba(0, 255, 221, 0.893); 
+    margin-bottom: 15px;    
 }
