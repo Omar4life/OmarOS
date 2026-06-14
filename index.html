@@ -8,6 +8,7 @@
 <body>
     
     <button id="welcomeopen">OmarOS</button>
+    <button id="pixelopen">Pixel Art</button> 
 
     <div id="window">
         
@@ -25,6 +26,8 @@
             <p>i know html/css and javascript</p>
             <p>currently, i'm learning python</p>
             
+            <h4>my social media profiles:</h4>
+
             <div>
                 <a href="https://linkedin.com" target="_blank" rel="noopener">
                  <img src="linke.png" alt="LinkedIn Logo" />
@@ -42,6 +45,33 @@
             <p id="timeElement" style="font-weight: bold;">
               Time
             </p>
+        </div>
+    </div>
+
+    <div id="pixel-window">
+        <div id="pixel-windowheader">
+            <div id="pixelclose" class="closebutton"></div>
+        </div>
+        <div class="window-content">
+            <h2>Pixel Art</h2>
+            
+            <div class="controls-panel">
+                <div class="picker-group">
+                    <label for="colorPicker" style="font-weight: bold;">Select Color:</label>
+                    <input type="color" id="colorPicker" value="#6210dd">
+                </div>
+                
+                <button id="eraserBtn">Eraser</button>
+                <button id="saveProjectBtn">Save</button>
+                
+                <select id="loadProjectSelect">
+                    <option value="">Load</option>
+                </select>
+
+                <button id="clearCanvasBtn">Clear</button>
+            </div>
+
+            <div id="canvasGrid"></div>
         </div>
     </div>
 
