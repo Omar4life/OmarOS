@@ -6,12 +6,13 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   
     <button id="welcomeopen">OmarOS</button>
-    <button id="pixelopen">Pixel Art</button> 
+    <button id="pixelopen">Pixel Art</button>
+    <button id="terminalopen">Terminal</button>
 
     <div id="window">
-        
+       
         <div id="windowheader">
             <div id="welcomeclose" class="closebutton"></div>
         </div>
@@ -25,7 +26,6 @@
             <p>i've been coding roughly since 2019-2020</p>
             <p>i know html/css and javascript</p>
             <p>currently, i'm learning python</p>
-            
             <h4>my social media profiles:</h4>
 
             <div>
@@ -37,7 +37,7 @@
 
             <div>
                 <a href="https://github.com" target="_blank" rel="noopener">
-                 <img src="download.png" alt="GitHub Logo" />   
+                 <img src="download.png" alt="GitHub Logo" />  
                  GitHub
                 </a>
             </div>
@@ -54,16 +54,16 @@
         </div>
         <div class="window-content">
             <h2>Pixel Art</h2>
-            
+           
             <div class="controls-panel">
                 <div class="picker-group">
                     <label for="colorPicker" style="font-weight: bold;">Select Color:</label>
                     <input type="color" id="colorPicker" value="#6210dd">
                 </div>
-                
+               
                 <button id="eraserBtn">Eraser</button>
                 <button id="saveProjectBtn">Save</button>
-                
+               
                 <select id="loadProjectSelect">
                     <option value="">Load</option>
                 </select>
@@ -75,7 +75,22 @@
         </div>
     </div>
 
+    <div id="terminal-window">
+        <div id="terminal-windowheader">
+            <div id="terminalclose" class="closebutton"></div>
+        </div>
+        <div class="window-content terminal-body">
+            <div id="terminalHistory">
+                <div>Welcome to OmarOS Terminal. Type <span class="highlight">-help</span> for a list of commands.</div>
+            </div>
+            <div class="input-line">
+                <span class="prompt">omarOS:~$&nbsp;</span>
+                <input type="text" id="terminalInput" autofocus autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
-    
+   
 </body>
 </html>
